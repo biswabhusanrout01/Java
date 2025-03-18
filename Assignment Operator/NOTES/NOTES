@@ -1,0 +1,188 @@
+📌 Complete Notes on Assignment Operators in Java
+🔹 What are Assignment Operators?
+Assignment operators in Java are used to assign values to variables. These operators are primarily used to store a computed value into a variable efficiently.
+
+🔹 Types of Assignment Operators
+Operator
+Example
+Equivalent To
+Description
+=
+a = b
+a = b
+Assigns value of b to a
++=
+a += b
+a = a + b
+Adds b to a and assigns the result to a
+-=
+a -= b
+a = a - b
+Subtracts b from a and assigns the result to a
+*=
+a *= b
+a = a * b
+Multiplies a by b and assigns the result to a
+/=
+a /= b
+a = a / b
+Divides a by b and assigns the result to a
+%=
+a %= b
+a = a % b
+Takes modulus of a and b and assigns the result to a
+&=
+a &= b
+a = a & b
+Performs bitwise AND and assigns the result to a
+`
+=`
+`a
+= b`
+^=
+a ^= b
+a = a ^ b
+Performs bitwise XOR and assigns the result to a
+<<=
+a <<= b
+a = a << b
+Performs left shift and assigns the result to a
+>>=
+a >>= b
+a = a >> b
+Performs right shift and assigns the result to a
+>>>=
+a >>>= b
+a = a >>> b
+Performs unsigned right shift and assigns the result to a
+
+🔹 1. Basic Assignment Operator (=)
+This operator assigns the value of the right operand to the left operand.
+Example:
+public class AssignmentExample {
+    public static void main(String[] args) {
+        int a = 10; // Assigns 10 to a
+        int b = a;  // Assigns value of a (10) to b
+        System.out.println("Value of b: " + b); // Output: 10
+    }
+}
+
+🔹 2. Addition Assignment Operator (+=)
+This adds the right operand to the left operand and assigns the result to the left operand.
+Example:
+public class AdditionAssignment {
+    public static void main(String[] args) {
+        int x = 5;
+        x += 3; // Equivalent to x = x + 3
+        System.out.println("x after +=: " + x); // Output: 8
+    }
+}
+
+🔹 3. Subtraction Assignment Operator (-=)
+This subtracts the right operand from the left operand and assigns the result to the left operand.
+Example:
+public class SubtractionAssignment {
+    public static void main(String[] args) {
+        int x = 10;
+        x -= 4; // Equivalent to x = x - 4
+        System.out.println("x after -=: " + x); // Output: 6
+    }
+}
+
+🔹 4. Multiplication Assignment Operator (*=)
+This multiplies the left operand by the right operand and assigns the result to the left operand.
+Example:
+public class MultiplicationAssignment {
+    public static void main(String[] args) {
+        int x = 5;
+        x *= 3; // Equivalent to x = x * 3
+        System.out.println("x after *=: " + x); // Output: 15
+    }
+}
+
+🔹 5. Division Assignment Operator (/=)
+This divides the left operand by the right operand and assigns the result to the left operand.
+Example:
+public class DivisionAssignment {
+    public static void main(String[] args) {
+        int x = 10;
+        x /= 2; // Equivalent to x = x / 2
+        System.out.println("x after /=: " + x); // Output: 5
+    }
+}
+
+🔹 6. Modulus Assignment Operator (%=)
+This takes the remainder when dividing the left operand by the right operand and assigns the result to the left operand.
+Example:
+public class ModulusAssignment {
+    public static void main(String[] args) {
+        int x = 10;
+        x %= 3; // Equivalent to x = x % 3
+        System.out.println("x after %=: " + x); // Output: 1
+    }
+}
+
+🔹 7. Bitwise AND Assignment Operator (&=)
+This performs a bitwise AND operation and assigns the result to the left operand.
+Example:
+public class BitwiseAndAssignment {
+    public static void main(String[] args) {
+        int x = 5;  // Binary: 0101
+        x &= 3;     // Binary: 0011
+                    // Result: 0001 (Decimal: 1)
+        System.out.println("x after &=: " + x); // Output: 1
+    }
+}
+
+🔹 8. Bitwise OR Assignment Operator (|=)
+This performs a bitwise OR operation and assigns the result to the left operand.
+Example:
+public class BitwiseOrAssignment {
+    public static void main(String[] args) {
+        int x = 5;  // Binary: 0101
+        x |= 3;     // Binary: 0011
+                    // Result: 0111 (Decimal: 7)
+        System.out.println("x after |=: " + x); // Output: 7
+    }
+}
+
+🔹 9. Bitwise XOR Assignment Operator (^=)
+This performs a bitwise XOR operation and assigns the result to the left operand.
+Example:
+public class BitwiseXorAssignment {
+    public static void main(String[] args) {
+        int x = 5;  // Binary: 0101
+        x ^= 3;     // Binary: 0011
+                    // Result: 0110 (Decimal: 6)
+        System.out.println("x after ^=: " + x); // Output: 6
+    }
+}
+
+🔹 10. Left Shift Assignment Operator (<<=)
+This shifts bits to the left and assigns the result to the left operand.
+Example:
+public class LeftShiftAssignment {
+    public static void main(String[] args) {
+        int x = 5;  // Binary: 00000101
+        x <<= 2;    // Shift left by 2 positions
+                    // Result: 00010100 (Decimal: 20)
+        System.out.println("x after <<=: " + x); // Output: 20
+    }
+}
+
+🔹 11. Right Shift Assignment Operator (>>=)
+This shifts bits to the right and assigns the result to the left operand.
+Example:
+public class RightShiftAssignment {
+    public static void main(String[] args) {
+        int x = 20; // Binary: 00010100
+        x >>= 2;    // Shift right by 2 positions
+                    // Result: 00000101 (Decimal: 5)
+        System.out.println("x after >>=: " + x); // Output: 5
+    }
+}
+
+🔹 Summary
+✅ Assignment operators simplify expressions and improve performance by reducing redundant calculations.
+✅ Bitwise operators like &=, |=, and ^= are useful in low-level programming, encryption, and hardware control.
+
